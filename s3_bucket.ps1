@@ -9,7 +9,7 @@ $latestfile = $path | Sort-Object -Descending -Property LastWriteTime | select -
 
 $latestfile.Name
 
-# foreach ($copy in $latestfile.Name)
-# {
-#     aws s3 cp C:\Users\smudunuri\Downloads\sample-s3\$copy  s3://sample97/test/ 
-# }
+ foreach ($copy in $latestfile.Name)
+ {
+     aws s3 cp C:\Users\smudunuri\Downloads\sample-s3\$copy  s3://sample97/test/ 
+ }
