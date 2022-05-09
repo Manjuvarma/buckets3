@@ -1,5 +1,8 @@
-$AWS_ACCESS_KEY_ID = $($env:access) 
-$AWS_SECRET_ACCESS_KEY = $($env:key) 
+$Access_1 = $($env:access)
+$Key_1 = $($env:key)
+
+$Env:AWS_ACCESS_KEY_ID = "$Access_1" 
+$Env:AWS_SECRET_ACCESS_KEY = "$Key_1"
 
 $inital = Initialize-AWSDefaultConfiguration -AccessKey AWS_ACCESS_KEY_ID -SecretKey AWS_SECRET_ACCESS_KEY -Region us-east-1
 
